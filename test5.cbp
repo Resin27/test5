@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test5" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/test5" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/test5" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="assetmanager.cpp" />
+		<Unit filename="assetmanager.h" />
+		<Unit filename="component.h" />
+		<Unit filename="componenttypes.h" />
+		<Unit filename="entitymanager.cpp" />
+		<Unit filename="entitymanager.h" />
+		<Unit filename="gameengine.cpp" />
+		<Unit filename="gameengine.h" />
+		<Unit filename="gamestate.h" />
+		<Unit filename="inputmanager.cpp" />
+		<Unit filename="inputmanager.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="movementsystem.cpp" />
+		<Unit filename="movementsystem.h" />
+		<Unit filename="object.h" />
+		<Unit filename="playstate.cpp" />
+		<Unit filename="playstate.h" />
+		<Unit filename="positioncomponent.h" />
+		<Unit filename="spritecomponent.h" />
+		<Unit filename="system.h" />
+		<Unit filename="velocitycomponent.h" />
+		<Unit filename="world.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

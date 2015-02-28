@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1422471145 source:c:\users\sam\documents\test5\main.cpp
+	"gameengine.h"
+	"playstate.h"
+	"world.h"
+
+1420239872 c:\users\sam\documents\test5\gameobject.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+
+1422294522 c:\users\sam\documents\test5\world.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+
+1424194012 source:c:\users\sam\documents\test5\gameengine.cpp
+	"gameengine.h"
+	"gamestate.h"
+	<iostream>
+
+1422141838 c:\users\sam\documents\test5\gameengine.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<vector>
+	"inputmanager.h"
+	"assetmanager.h"
+
+1423948600 c:\users\sam\documents\test5\gamestate.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"gameengine.h"
+
+1422300320 source:c:\users\sam\documents\test5\assetmanager.cpp
+	"assetmanager.h"
+
+1424473354 c:\users\sam\documents\test5\assetmanager.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<vector>
+	<iostream>
+
+1425082229 source:c:\users\sam\documents\test5\playstate.cpp
+	"playstate.h"
+
+1425003889 c:\users\sam\documents\test5\playstate.h
+	"gamestate.h"
+	"world.h"
+	"entitymanager.h"
+	"object.h"
+	"entity.h"
+
+1424473363 c:\users\sam\documents\test5\inputmanager.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<iostream>
+
+1422470895 source:c:\users\sam\documents\test5\inputmanager.cpp
+	"inputmanager.h"
+
+1422472016 c:\users\sam\documents\test5\positioncomponent.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"component.h"
+
+1425005966 c:\users\sam\documents\test5\component.h
+
+1423948635 c:\users\sam\documents\test5\spritecomponent.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"component.h"
+
+1422486177 c:\users\sam\documents\test5\velocitycomponent.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"component.h"
+
+1423947120 c:\users\sam\documents\test5\movementsystem.h
+	"system.h"
+	"componenttypes.h"
+	"positioncomponent.h"
+	"velocitycomponent.h"
+
+1425082266 c:\users\sam\documents\test5\system.h
+
+1424451563 c:\users\sam\documents\test5\componenttypes.h
+
+1423947162 source:c:\users\sam\documents\test5\movementsystem.cpp
+	"movementsystem.h"
+
+1424219461 c:\users\sam\documents\test5\entitymanager.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<vector>
+	<iostream>
+	"componenttypes.h"
+	"component.h"
+	"positioncomponent.h"
+	"velocitycomponent.h"
+	"spritecomponent.h"
+
+1424451893 source:c:\users\sam\documents\test5\entitymanager.cpp
+	"entitymanager.h"
+
+1424717583 c:\users\sam\documents\test5\object.h
+
+1425091016 c:\users\sam\documents\test5\entity.h
+	"component.h"
+
