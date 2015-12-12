@@ -18,6 +18,8 @@ public:
     sf::Vector2i position;
     sf::Vector2f remainder;
 
+    PositionComponent(unsigned int inID) : Component(inID){flag = 1<<COMPONENT_POSITION;}
+
     //PositionComponent(){oldPosition = sf::Vector2f(); position = sf::Vector2f();}
     //PositionComponent(float x, float y){oldPosition = position; oldPositionRemainder = positionRemainder;
     //                                    position = sf::Vector2i(int(x), int(y)); positionRemainder = sf::Vector2f(x - position.x, y - position.y);}

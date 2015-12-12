@@ -64,7 +64,7 @@ void GameEngine::handleEvents()
     while(window.pollEvent(event))
         if(event.type == sf::Event::Closed)
             quit();
-    inputManager.update();
+    //inputManager.update();
     if(!states.empty())
         states.back()->handleEvents();
 }
@@ -74,6 +74,17 @@ void GameEngine::update()
     sf::Time newTime = timer.getElapsedTime();
     sf::Time frameTime = newTime - currentTime;
     currentTime = newTime;
+
+    ///--------------------------------------------------------------------------
+    frameTimer+=frameTime;
+    ++frameCounter;
+    if(frameTimer.asSeconds() >= 1.f)
+    {
+        std::cout<<"FPS: " << frameCounter/frameTimer.asSeconds() << std::endl;
+        frameCounter = 0;
+        frameTimer=sf::seconds(0.f);
+    }
+    ///--------------------------------------------------------------------------
 
     accumulator += frameTime;
 

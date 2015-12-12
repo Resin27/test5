@@ -3,10 +3,11 @@
 
 #include "gamestate.h"
 
-#include "world.h"
 #include "entitymanager.h"
+#include "movementsystem.h"
+#include "collisionsystem.h"
+#include "drawsystem.h"
 
-#include "object.h"
 #include "entity.h"
 
 
@@ -14,11 +15,11 @@ class PlayState : public GameState
 {
 protected:
 
-    World world;
     EntityManager eManager;
 
-    Object testObject;
-    Entity testEntity;
+    MovementSystem movementSystem;
+    CollisionSystem collisionSystem;
+    DrawSystem drawSystem;
 
 public:
 

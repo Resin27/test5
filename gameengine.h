@@ -19,9 +19,12 @@ class GameEngine
 private:
 
     sf::Clock timer;
-    const sf::Time dt = sf::seconds(1.f/60.f);
+    const sf::Time dt = sf::seconds(1.f/30.f);
     sf::Time currentTime;
     sf::Time accumulator;
+
+    unsigned int frameCounter = 0;
+    sf::Time frameTimer;
 
     std::vector<GameState*> states;
     bool running;

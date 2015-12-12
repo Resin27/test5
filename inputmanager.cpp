@@ -53,8 +53,8 @@ InputManager::InputManager()
             //std::cout << "Joystick " << i << " has " << numAxes << " axes." << std::endl;
             std::cout << "Joystick " << i << " has " << numButtons << " buttons." << std::endl;
             std::cout << "Joystick " << i << " has " << (sf::Joystick::hasAxis(i, sf::Joystick::X) ? "an " : "no ") << "xAxis." << std::endl;
-            std::cout << "Joystick " << i << " has " << (sf::Joystick::hasAxis(i, sf::Joystick::Y) ? "an " : "no ") << "yAxis." << std::endl;
-            std::cout << "Joystick " << i << " has " << (sf::Joystick::hasAxis(i, sf::Joystick::Z) ? "an " : "no ") << "zAxis." << std::endl;
+            std::cout << "Joystick " << i << " has " << (sf::Joystick::hasAxis(i, sf::Joystick::Y) ? "a " : "no ") << "yAxis." << std::endl;
+            std::cout << "Joystick " << i << " has " << (sf::Joystick::hasAxis(i, sf::Joystick::Z) ? "a " : "no ") << "zAxis." << std::endl;
             break;
         }
         //else
@@ -66,7 +66,7 @@ void InputManager::configureBindings(sf::RenderWindow *window)
 {
     sf::Event event;
     bool validInput;
-    for(int i = 0; i < NUM_OF_INPUTS; i++)
+    for(int i = 0; i < NUM_OF_INPUTS; ++i)
     {
         std::cout << "Press the button you wish to bind to: " << inputToString(InputType(i)) << std::endl;
         validInput = false;
@@ -134,8 +134,6 @@ void InputManager::update()
         default:
             keyState = false;
         }
-        ///Really need to implement a sort of edge-triggering register, so make sure that button presses are only counted once.
-        //bool keyState = sf::Keyboard::isKeyPressed(inputBinding[i]);
 
         inputRegister[i].isPressed = keyState;
     }

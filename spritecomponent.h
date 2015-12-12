@@ -13,6 +13,8 @@ protected:
 
 public:
 
+    SpriteComponent(unsigned int inID) : Component(inID){flag = 1<<COMPONENT_SPRITE;}
+
     sf::Texture *texture;
     sf::Sprite sprite;
 

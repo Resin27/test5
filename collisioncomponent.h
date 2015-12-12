@@ -1,5 +1,5 @@
-#ifndef VELOCITY_COMPONENT_H
-#define VELOCITY_COMPONENT_H
+#ifndef COLLISION_COMPONENT_H
+#define COLLISION_COMPONENT_H
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
@@ -7,19 +7,20 @@
 #include "component.h"
 
 ///Class
-class VelocityComponent : public Component
+class CollisionComponent : public Component
 {
 protected:
 
 public:
 
-    VelocityComponent(unsigned int inID) : Component(inID){flag = 1<<COMPONENT_VELOCITY;}
+    CollisionComponent(unsigned int inID) : Component(inID){flag = 1<<COMPONENT_COLLISION;}
 
     ///Can't think. Would an old value of velocity even be helpful?
     //sf::Vector2f oldVelocity;
-    sf::Vector2f velocity;
+    sf::FloatRect hitbox;
 
 };
 
 #endif
+
 

@@ -33,8 +33,13 @@
 		</Compiler>
 		<Unit filename="assetmanager.cpp" />
 		<Unit filename="assetmanager.h" />
+		<Unit filename="collisioncomponent.h" />
+		<Unit filename="collisionsystem.h" />
 		<Unit filename="component.h" />
 		<Unit filename="componenttypes.h" />
+		<Unit filename="drawsystem.cpp" />
+		<Unit filename="drawsystem.h" />
+		<Unit filename="entity.h" />
 		<Unit filename="entitymanager.cpp" />
 		<Unit filename="entitymanager.h" />
 		<Unit filename="gameengine.cpp" />
@@ -45,14 +50,12 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="movementsystem.cpp" />
 		<Unit filename="movementsystem.h" />
-		<Unit filename="object.h" />
 		<Unit filename="playstate.cpp" />
 		<Unit filename="playstate.h" />
 		<Unit filename="positioncomponent.h" />
 		<Unit filename="spritecomponent.h" />
 		<Unit filename="system.h" />
 		<Unit filename="velocitycomponent.h" />
-		<Unit filename="world.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

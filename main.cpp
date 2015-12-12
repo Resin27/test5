@@ -1,7 +1,6 @@
 //#include "gameobject.h"
 #include "gameengine.h"
 #include "playstate.h"
-#include "world.h"
 //#include <iostream>
 
 int main()

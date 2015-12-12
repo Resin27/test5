@@ -1,8 +1,7 @@
 # depslib dependency file v1.0
-1422471145 source:c:\users\sam\documents\test5\main.cpp
+1449932028 source:c:\users\sam\documents\test5\main.cpp
 	"gameengine.h"
 	"playstate.h"
-	"world.h"
 
 1420239872 c:\users\sam\documents\test5\gameobject.h
 	<SFML/Graphics.hpp>
@@ -14,12 +13,12 @@
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
 
-1424194012 source:c:\users\sam\documents\test5\gameengine.cpp
+1449875883 source:c:\users\sam\documents\test5\gameengine.cpp
 	"gameengine.h"
 	"gamestate.h"
 	<iostream>
 
-1422141838 c:\users\sam\documents\test5\gameengine.h
+1449852362 c:\users\sam\documents\test5\gameengine.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -43,75 +42,113 @@
 	<vector>
 	<iostream>
 
-1425082229 source:c:\users\sam\documents\test5\playstate.cpp
+1449934756 source:c:\users\sam\documents\test5\playstate.cpp
 	"playstate.h"
 
-1425003889 c:\users\sam\documents\test5\playstate.h
+1449932638 c:\users\sam\documents\test5\playstate.h
 	"gamestate.h"
-	"world.h"
 	"entitymanager.h"
-	"object.h"
+	"movementsystem.h"
+	"collisionsystem.h"
+	"drawsystem.h"
 	"entity.h"
 
-1424473363 c:\users\sam\documents\test5\inputmanager.h
+1449875755 c:\users\sam\documents\test5\inputmanager.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
 	<iostream>
 
-1422470895 source:c:\users\sam\documents\test5\inputmanager.cpp
+1449875891 source:c:\users\sam\documents\test5\inputmanager.cpp
 	"inputmanager.h"
 
-1422472016 c:\users\sam\documents\test5\positioncomponent.h
+1425403765 c:\users\sam\documents\test5\positioncomponent.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
 	"component.h"
 
-1425005966 c:\users\sam\documents\test5\component.h
-
-1423948635 c:\users\sam\documents\test5\spritecomponent.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	"component.h"
-
-1422486177 c:\users\sam\documents\test5\velocitycomponent.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	"component.h"
-
-1423947120 c:\users\sam\documents\test5\movementsystem.h
-	"system.h"
+1425403759 c:\users\sam\documents\test5\component.h
 	"componenttypes.h"
+
+1425403769 c:\users\sam\documents\test5\spritecomponent.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"component.h"
+
+1425403771 c:\users\sam\documents\test5\velocitycomponent.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"component.h"
+
+1449859101 c:\users\sam\documents\test5\movementsystem.h
+	"system.h"
 	"positioncomponent.h"
 	"velocitycomponent.h"
 
-1425082266 c:\users\sam\documents\test5\system.h
+1449866795 c:\users\sam\documents\test5\system.h
+	"entity.h"
+	"componenttypes.h"
 
-1424451563 c:\users\sam\documents\test5\componenttypes.h
+1449852025 c:\users\sam\documents\test5\componenttypes.h
 
-1423947162 source:c:\users\sam\documents\test5\movementsystem.cpp
+1449859067 source:c:\users\sam\documents\test5\movementsystem.cpp
 	"movementsystem.h"
+	<iostream>
 
-1424219461 c:\users\sam\documents\test5\entitymanager.h
+1449866493 c:\users\sam\documents\test5\entitymanager.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
 	<vector>
 	<iostream>
-	"componenttypes.h"
+	"entity.h"
 	"component.h"
 	"positioncomponent.h"
 	"velocitycomponent.h"
 	"spritecomponent.h"
 
-1424451893 source:c:\users\sam\documents\test5\entitymanager.cpp
+1449857678 source:c:\users\sam\documents\test5\entitymanager.cpp
 	"entitymanager.h"
 
 1424717583 c:\users\sam\documents\test5\object.h
 
-1425091016 c:\users\sam\documents\test5\entity.h
+1449866493 c:\users\sam\documents\test5\entity.h
+	<string>
+	<vector>
+	<iostream>
+	"component.h"
+
+1435510552 c:\users\sam\documents\test5\controlmanager.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<vector>
+	<iostream>
+	"inputmanager.h"
+	"entitymanager.h"
+
+1435510772 source:c:\users\sam\documents\test5\controlmanager.cpp
+	"controlmanager.h"
+
+1449861206 c:\users\sam\documents\test5\drawsystem.h
+	"system.h"
+	"positioncomponent.h"
+	"spritecomponent.h"
+
+1449861263 source:c:\users\sam\documents\test5\drawsystem.cpp
+	"drawsystem.h"
+
+1449934033 c:\users\sam\documents\test5\collisionsystem.h
+	"system.h"
+	"positioncomponent.h"
+	"collisioncomponent.h"
+
+1449933225 c:\users\sam\documents\test5\collisioncomponent.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
 	"component.h"
 

@@ -37,12 +37,17 @@ struct Input
 {
     DeviceType device;
 
-    sf::Keyboard::Key key;
-    sf::Mouse::Button mouseButton;
-    unsigned int joystickButton;
-
-    sf::Joystick::Axis axis;
-    float direction;
+    union
+    {
+        sf::Keyboard::Key key;
+        sf::Mouse::Button mouseButton;
+        unsigned int joystickButton;
+        struct
+        {
+            sf::Joystick::Axis axis;
+            float direction;
+        };
+    };
 
     bool isPressed;
 
@@ -59,6 +64,8 @@ protected:
     unsigned int numButtons;
 
     Input inputRegister[NUM_OF_INPUTS];
+    bool keyPressed[NUM_OF_INPUTS];
+    bool keyRelease[NUM_OF_INPUTS];
 
     /*sf::Keyboard::Key inputBinding[NUM_OF_INPUTS];
     ///-------------------------------------------------------
@@ -82,6 +89,8 @@ public:
     bool isKeyReleased(InputType inputType){return keyReleased[inputType];}*/
 
     //bool isInput(InputType inputType){return inputRegister[inputType].isPressed;}
+
+    Input* getRegister(){return inputRegister;}
 
     std::string inputToString(InputType inputType);
     std::string deviceToString(DeviceType deviceType);
